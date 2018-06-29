@@ -1,2 +1,2 @@
 
-This folder contains sub-folders of test code for homework projects.
+This folder contains sub-folders of test code for homework assignments.
