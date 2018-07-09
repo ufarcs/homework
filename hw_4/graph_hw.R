@@ -2,8 +2,8 @@
 ### Data Management in R ### 
 
 # Import the rhino and lion data set with the following csv files:
-# https://raw.githubusercontent.com/Gharv/Questions/master/lionCrater.csv
-# https://raw.githubusercontent.com/Gharv/Questions/master/blackRhinoCrater.csv
+# https://raw.githubusercontent.com/mydatastory/textbooks/blob/master/_moore/data/lionCrater.csv
+# https://raw.githubusercontent.com/mydatastory/textbooks/blob/master/_moore/data/blackRhinoCrater.csv
 
 lion <- 
 rhino <- 
