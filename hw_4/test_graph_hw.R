@@ -1,12 +1,12 @@
-source("graph_hw.R")
+source("./graph_hw.R")
 library(testthat)
 
 liona <- read.csv("https://raw.githubusercontent.com/mydatastory/textbooks/master/_moore/data/lionCrater.csv")
 rhinoa <- read.csv("https://raw.githubusercontent.com/mydatastory/textbooks/master/_moore/data/blackRhinoCrater.csv")
 dataa <- c(min(liona$Population), min(rhinoa$Population))
 names(dataa) <- c("Lion", "Rhino")
-lion2 <- subset(liona, liona$Year > 1979)
-rhino2 <- subset(rhinoa, rhinoa$Year < 1993)
+lion2a <- subset(liona, liona$Year > 1979)
+rhino2a <- subset(rhinoa, rhinoa$Year < 1993)
 
 test_that("hw answers", {
   
@@ -27,16 +27,17 @@ test_that("hw answers", {
   expect_equal(direct, F)
   expect_equal(inverse, T)
   expect_equal(answer6, par(mfrow=c(2,1)))
-  expect_equal(lion2, subset(liona, liona$Year > 1979))
-  expect_equal(rhino2, subset(rhinoa, rhinoa$Year < 1993))
-  expect_equal(answer8, plot(lion2$Year, lion2$Population, type = "l", col = "purple", main = "Lion and Black Rhino Population", xlab = "Year", ylab = "Population", ylim = c(0,100)))
-  expect_equal(answer8_added_points, points(rhino2$Year, rhino2$Population, col = "red"))
+  dev.off()
+  expect_equal(lion2, lion2a)
+  expect_equal(rhino2, rhino2a)
+  expect_equal(answer8, plot(lion2a$Year, lion2a$Population, type = "l", col = "purple", main = "Lion and Black Rhino Population", xlab = "Year", ylab = "Population", ylim = c(0,100)))
+  expect_equal(answer8_added_points, points(rhino2a$Year, rhino2a$Population, col = "red"))
   expect_equal(answer9, legend("topright", legend = c("Lion", "Black Rhino"), col = c("purple", "red"), lty = c(1,NA), pch = c(NA,1)))
   expect_equal(data, dataa)
   expect_equal(names(data), c("Lion", "Rhino"))
   expect_equal(answer10, barplot(dataa))
   expect_equal(answer11, boxplot(liona$Population, rhinoa$Population, names = c("Lion", "Rhino"), main = "Population Sizes"))
-  expect_equal(answer12, hist(rhinoa$Population, main = "Rhino Population Sizes", xlab = "Population Size"))
+  expect_equal(answer12, hist(rhino$Population, main = "Rhino Population Sizes", xlab = "Population Size"))
   expect_equal(answer13, abline(v=mean(rhinoa$Population), col = "orange"))
   
 })

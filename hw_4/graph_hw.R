@@ -48,12 +48,11 @@ par(mfrow=c(1,2))
 plot(lion$Year, lion$Population, main="Lion Population", xlab="Year", ylab="Population")
 plot(rhino$Year, rhino$Population, main="Rhino Population", xlab="Year", ylab="Population", 
      col="darkgreen", type="l", lty=2)
+direct <- F
+inverse <- T
 
 # Resets graphing parameters
 dev.off()
-
-direct <- F
-inverse <- T
 
 # Question 6
 # Use the par() function to create the setup for two plots with one column and two rows
