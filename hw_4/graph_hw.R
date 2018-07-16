@@ -111,12 +111,3 @@ answer12 <- hist(rhino$Population, main = "Rhino Population Sizes", xlab = "Popu
 # Add an orange vertical line to show the mean population size.
 
 answer13 <- abline(v=mean(rhino$Population), col = "orange")
-
-
-
-
-
-
-
-
-
