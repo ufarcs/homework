@@ -26,21 +26,21 @@ rhino_pop_plot <- plot(rhino$Year, rhino$Population, main="Rhino Population", xl
 # Looking at the graphs made above, is the lion population increasing or decreasing?
 # Assign the correct answer as True.
 
-Constant <- F
-Only_decreasing <- F
-Increasing_then_decreasing <- T
-Only_increasing <- F
-Decreasing_then_increasing <- F
+q3_Constant <- F
+q3_Only_decreasing <- F
+q3_Increasing_then_decreasing <- T
+q3_Only_increasing <- F
+q3_Decreasing_then_increasing <- F
 
 # Question 4
 # Is the rhino population increasing or decreasing? 
 # Assign the correct answer as True.
 
-Constant <- F
-Only_decreasing <- F
-Increasing_then_decreasing <- F
-Only_increasing <- F
-Decreasing_then_increasing <- T
+q4_Constant <- F
+q4_Only_decreasing <- F
+q4_Increasing_then_decreasing <- F
+q4_Only_increasing <- F
+q4_Decreasing_then_increasing <- T
 
 # Question 5
 # Run the two plots below, how would you describe their relationship?
