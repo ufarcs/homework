@@ -1,0 +1,18 @@
+language: R
+cache: packages
+sudo: false
+
+before_install:
+- chmod +x ./.hw_1/intro_hw.R
+- chmod +x ./.hw_2/h2_2.R
+- chmod +x ./.hw_3/desc_hw.R
+- chmod +x ./.hw_4/graph_hw.R
+
+install:
+- R -e 'install.packages("testthat")'
+
+script:
+- Rscript ./.hw_1/test_intro_hw.R
+- Rscript ./.hw_2/test_hw2.R
+- Rscript ./.hw_3/test_desc_hw.R
+- Rscript ./.hw_4/test_graph_hw.R
