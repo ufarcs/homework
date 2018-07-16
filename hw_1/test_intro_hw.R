@@ -1,4 +1,4 @@
-source("./intro_hw/intro_hw.R")
+source("intro_hw.R")
 library(testthat)
 
 D2_answer <- D

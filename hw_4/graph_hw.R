@@ -5,8 +5,8 @@
 # https://raw.githubusercontent.com/mydatastory/textbooks/blob/master/_moore/data/lionCrater.csv
 # https://raw.githubusercontent.com/mydatastory/textbooks/blob/master/_moore/data/blackRhinoCrater.csv
 
-lion <- 
-rhino <- 
+lion <- read.csv("https://raw.githubusercontent.com/mydatastory/textbooks/master/_moore/data/lionCrater.csv")
+rhino <- read.csv("https://raw.githubusercontent.com/mydatastory/textbooks/master/_moore/data/blackRhinoCrater.csv")
 
 # Question 1
 # Create a plot of the lion population size with the year on the x-axis. Include a title, axis labels.
@@ -44,10 +44,13 @@ Decreasing_then_increasing <- T
 
 # Question 5
 # Run the two plots below, how would you describe their relationship?
-
+par(mfrow=c(1,2))
 plot(lion$Year, lion$Population, main="Lion Population", xlab="Year", ylab="Population")
 plot(rhino$Year, rhino$Population, main="Rhino Population", xlab="Year", ylab="Population", 
      col="darkgreen", type="l", lty=2)
+
+# Resets graphing parameters
+dev.off()
 
 direct <- F
 inverse <- T
@@ -56,6 +59,9 @@ inverse <- T
 # Use the par() function to create the setup for two plots with one column and two rows
 
 answer6 <- par(mfrow=c(2,1))
+
+# Resets graphing parameters
+dev.off()
 
 # Question 7
 # Create two new data frames lion2 and rhino2 that contain the subset of years that overlap between the
