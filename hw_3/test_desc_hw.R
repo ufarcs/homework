@@ -1,10 +1,10 @@
-source("./desc_hw/desc_hw.R")
-library(testthat)
+#source("./desc_hw/desc_hw.R")
+#library(testthat)
 
-D2_answer <- D
-D2_answer[1] <- 5
+#D2_answer <- D
+#D2_answer[1] <- 5
 
-test_that("hw answers", {
+#test_that("hw answers", {
   
   expect_equal(answer1, 15+32)
   expect_equal(answer2, 34*543)
