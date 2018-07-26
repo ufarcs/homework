@@ -3,11 +3,11 @@
 
 # Question 19 & 20.
 # Import the rhino and lion data set with the following csv files:
-# https://raw.githubusercontent.com/Gharv/Questions/master/lionCrater.csv
-# https://raw.githubusercontent.com/Gharv/Questions/master/blackRhinoCrater.csv
+# https://raw.githubusercontent.com/mydatastory/textbooks/master/_moore/data/lionCrater.csv
+# https://raw.githubusercontent.com/mydatastory/textbooks/master/_moore/data/blackRhinoCrater.csv
 
-lion <- read.csv("https://raw.githubusercontent.com/Gharv/Questions/master/lionCrater.csv")
-rhino <- read.csv("https://raw.githubusercontent.com/Gharv/Questions/master/blackRhinoCrater.csv") 
+lion <- read.csv("https://raw.githubusercontent.com/mydatastory/textbooks/master/_moore/data/lionCrater.csv")
+rhino <- read.csv("https://raw.githubusercontent.com/mydatastory/textbooks/master/_moore/data/blackRhinoCrater.csv")
 
 # Question 21
 # Display the structure of the Lion data frame. Take a look at what is produced.
